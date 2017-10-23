@@ -3,18 +3,6 @@ Simple HTTP Error Page Generator. Create a bunch of custom error pages - suitabl
 
 ![Screenshot](https://raw.githubusercontent.com/colterd/PancakesGG-HttpsErrorPages/master/assets/screenshot1.png)
 
-## Demo ##
-* [HTTP400](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP400.html)
-* [HTTP401](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP401.html)
-* [HTTP403](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP403.html)
-* [HTTP404](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP404.html)
-* [HTTP500](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP500.html)
-* [HTTP501](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP501.html)
-* [HTTP502](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP502.html)
-* [HTTP503](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP503.html)
-* [HTTP520](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP520.html)
-* [HTTP521](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP521.html)
-
 ## Download ##
 Just clone/download the git repository.
 
