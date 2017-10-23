@@ -1,37 +1,22 @@
-# Simple HttpErrorPages #
+# Simple PancakesGG-HttpsErrorPages #
 Simple HTTP Error Page Generator. Create a bunch of custom error pages - suitable to use with Lighttpd, Nginx, Apache-Httpd or any other Webserver.
 
-![Screenshot](https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/assets/screenshot1.png)
+![Screenshot](https://raw.githubusercontent.com/colterd/PancakesGG-HttpsErrorPages/master/assets/screenshot1.png)
 
 ## Demo ##
-* [HTTP400](https://andidittrich.github.io/HttpErrorPages/HTTP400.html)
-* [HTTP401](https://andidittrich.github.io/HttpErrorPages/HTTP401.html)
-* [HTTP403](https://andidittrich.github.io/HttpErrorPages/HTTP403.html)
-* [HTTP404](https://andidittrich.github.io/HttpErrorPages/HTTP404.html)
-* [HTTP500](https://andidittrich.github.io/HttpErrorPages/HTTP500.html)
-* [HTTP501](https://andidittrich.github.io/HttpErrorPages/HTTP501.html)
-* [HTTP502](https://andidittrich.github.io/HttpErrorPages/HTTP502.html)
-* [HTTP503](https://andidittrich.github.io/HttpErrorPages/HTTP503.html)
-* [HTTP520](https://andidittrich.github.io/HttpErrorPages/HTTP520.html)
-* [HTTP521](https://andidittrich.github.io/HttpErrorPages/HTTP521.html)
+* [HTTP400](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP400.html)
+* [HTTP401](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP401.html)
+* [HTTP403](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP403.html)
+* [HTTP404](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP404.html)
+* [HTTP500](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP500.html)
+* [HTTP501](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP501.html)
+* [HTTP502](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP502.html)
+* [HTTP503](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP503.html)
+* [HTTP520](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP520.html)
+* [HTTP521](https://colterd.github.io/PancakesGG-HttpsErrorPages/HTTP521.html)
 
 ## Download ##
-Just clone/download the git repository **or** use the prebuild packages (only the generated html files are included)
-
-## Download Prebuild Packages (Pages only) ##
-
-**Direct Download**
-* [Download TAR Archive](https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/dist/pages.tar)
-* [Download ZIP Archive](https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/dist/pages.zip)
-
-**Shell/Bash**
-```shell
-# TAR Archive
-wget https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/dist/pages.tar
-
-# ZIP Archive
-wget https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/dist/pages.zip
-```
+Just clone/download the git repository.
 
 ## NGINX Integration ##
 
@@ -39,7 +24,7 @@ wget https://raw.githubusercontent.com/AndiDittrich/HttpErrorPages/master/dist/p
 
 File: `default.conf`
 
-Example - assumes HttpErrorPages are located into `/var/www/ErrorPages/`.
+Example - assumes PancakesGG-HttpsErrorPages are located into `/var/www/ErrorPages/`.
 
 ```nginx
 # add one directive for each http status code
@@ -60,24 +45,16 @@ location /ErrorPages/ {
 }
 ```
 
-## expressjs Integration ##
-
-HttpErrorPages are available as NPM-Package - just install `http-error-pages` via **npm/yarn**
-
-```terminal
-npm install http-error-pages --save
-```
-
 Example
 
 ```js
 var _express = require('express');
 var _webapp = _express();
-var _httpErrorPages = require('http-error-pages');
+var _PancakesGG-HttpsErrorPages = require('http-error-pages');
 
 // demo handler
 _webapp.get('/', function(req, res){
-    res.type('.txt').send('HttpErrorPages Demo');
+    res.type('.txt').send('PancakesGG-HttpsErrorPages Demo');
 });
 
 // throw an 403 error
@@ -88,7 +65,7 @@ _webapp.get('/my403error', function(req, res, next){
 });
 
 // use http error pages handler (final statement!)
-_httpErrorPages(_webapp);
+_PancakesGG-HttpsErrorPages(_webapp);
 
 // start service
 _webapp.listen(8888);
@@ -99,7 +76,7 @@ _webapp.listen(8888);
 
 File: `httpd.conf` or `.htaccess`
 
-Example - assumes HttpErrorPages are located into your **document root** `/var/www/...docroot../ErrorPages`.
+Example - assumes PancakesGG-HttpsErrorPages are located into your **document root** `/var/www/...docroot../ErrorPages`.
 
 ```ApacheConf
 ErrorDocument 400 /ErrorPages/HTTP400.html
@@ -118,7 +95,7 @@ ErrorDocument 503 /ErrorPages/HTTP503.html
 
 File: `lighttpd.conf`
 
-Example - assumes HttpErrorPages are located into `/var/www/ErrorPages/`.
+Example - assumes PancakesGG-HttpsErrorPages are located into `/var/www/ErrorPages/`.
 
 ```ApacheConf
 server.errorfile-prefix = "/var/www/ErrorPages/HTTP"
@@ -186,4 +163,4 @@ footer = "Technical Contact: <a href="mailto:x@example.com">x@example.com</a>"
 ```
 
 ## License ##
-HttpErrorsPages is OpenSource and licensed under the Terms of [The MIT License (X11)](http://opensource.org/licenses/MIT) - your're welcome to contribute
+PancakesGG-HttpsErrorPages is OpenSource and licensed under the Terms of [The MIT License (X11)](http://opensource.org/licenses/MIT) - you're welcome to contribute.
