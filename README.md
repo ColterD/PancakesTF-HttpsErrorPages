@@ -1,5 +1,5 @@
 # Simple PancakesGG-HttpsErrorPages #
-Simple HTTP Error Page Generator. Create a bunch of custom error pages - suitable to use with Lighttpd, Nginx, Apache-Httpd or any other Webserver.
+Simple HTTP Error Page Generator. Create a bunch of custom error pages - suitable to use with Lighttpd, Nginx, Apache-Httpd or any other Webserver.  It also includes the Chrome Dinosaur game.  If you are on a browser that is not Chrome, the game will not load and you'll see a blank space.  This is intentional.
 
 ![Screenshot](https://raw.githubusercontent.com/colterd/PancakesGG-HttpsErrorPages/master/assets/screenshot1.png)
 
